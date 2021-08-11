@@ -1,0 +1,85 @@
+.Navbar{
+    background-color: #1EA685;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+
+}
+.menu p a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+.menu p {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+/* Input page */
+.Input h2{
+    margin-top: 20px;
+}
+.input-wrapper{
+    margin: 30px auto;
+    border: 0.5px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-wrapper .name,
+.input-wrapper .company,
+.input-wrapper .email{
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    box-shadow: white ;
+    padding: 5px;
+    outline: none;
+    width: 70%;
+}
+
+.input-wrapper .btn-submit{
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: rgb(25, 143, 25);
+    padding: 5px 20px 5px 20px;
+    font-weight: 500;
+}
+
+/* CARD */
+.content-wrap{
+    display: flex;
+    justify-content: center;
+}
+.template{
+    width: 550px;
+    height:300px;
+}
+
+
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-wrapper p{
+    margin: 10px;
+}
+
+.btn-wrapper p a{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+.btn-wrapper p a:hover{
+    color: coral;
+}

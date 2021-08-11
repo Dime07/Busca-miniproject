@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import Navbar from './components/Navbar';
+import Input from './components/Input';
+import Card from './Card';
+import {BrowserRouter, Switch, Route} from "react-router-dom";
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  //data
+  const [data, setData] = useState([]);
+
+  function getData(biodata) { 
+    setData((data) => [...data, biodata]);
+    alert("berhasil didapat")
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Navbar />
+        <Switch>
+          <Route path="/" exact>
+            <Input bio={data} send={getData}/>
+          </Route>
+
+          <Route path="/card" exact>
+            <Card bio={data}/>
+          </Route>
+
+        </Switch>
+
+        
+        
+      </BrowserRouter>
+      
     </div>
   );
 }

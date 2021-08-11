@@ -1,0 +1,31 @@
+.CardOne{
+    width: 550px;
+    height: 300px;
+    background-image: url(../Assets/card-1.jpg);
+    position: relative;
+}
+
+.CardOne .bio{
+    text-align: right;
+    padding-top: 120px;
+    padding-right: 20px;
+}
+
+.CardOne p{
+    font-size: 10px;
+}
+
+.bio .line{
+    margin: auto;
+    width: 80px;
+    height: 2px;
+    margin-top: 5px;
+    background-color: black;
+}
+
+.CardOne .temp-email{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
